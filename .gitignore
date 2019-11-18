@@ -1,4 +1,6 @@
-credentials.json
+#Токен для работы с API
+credentials.json    
+#Библиотека для работы с API
 vendor
 composer.json
 composer.lock

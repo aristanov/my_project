@@ -1,10 +1,12 @@
 <?php
-$host = 'localhost';
-    $db   = 'something';
-    $user = 'root';
-    $pass = '';
+    //Настройки ДБ
+    $host = 'localhost';    
+    $db   = 'something';    //Название БД
+    $user = 'root';     //Пользователь
+    $pass = '';     //Пароль
     $charset = 'utf8';
 
+    //Установка соединения
     $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
     $opt = [
         PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
@@ -12,7 +14,5 @@ $host = 'localhost';
         PDO::ATTR_EMULATE_PREPARES   => false,
     ];
     $pdo = new PDO($dsn, $user, $pass, $opt);
-
-    // Запрос всех данных из таблицы users
-    $sth = $pdo->prepare("SELECT * FROM users");
+  
 ?>

@@ -1,1 +1,1 @@
-php.exe -f C:\Users\Badman\OneDrive\Learning\Fact\API.php
+php.exe -f C:\Users\Badman\OneDrive\Learning\Fact\API.php   //запускает скрипт (может быть использован для планового запуска Windows)
